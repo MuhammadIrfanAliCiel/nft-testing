@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My NFTs</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900 text-gray-50">
+  <main class="p-10">
+    <header class="flex justify-between items-center">
+      <h1 class="font-semibold">My NFTs</h1>
+      <div id="current_address" hidden class="bg-blue-100 px-4 py-1 text-sm rounded-full text-black font-semibold">
+      </div>
+    </header>
+
+    <div id="container" class="flex flex-wrap gap-5 mt-10 justify-start"></div>
+  </main>
+
+  <template id="nft_template">
+    <section class="w-48 flex justify-around flex-col bg-blue-100 px-2 py-1 rounded-md">
+      <h1 class="text-black text-center font-semibold"></h1>
+
+      <a href="" target="_blank">
+        <img src="" alt="" class="rounded-md">
+      </a>
+    </section>
+  </template>
+
+  <script src="https://unpkg.com/es7-object-polyfill"></script>
+
+
+  <!-- <nft-card contractAddress="0x2953399124f0cbb46d2cbacd8a89cf0599974963"
+    tokenId="114380899824583596051179806148799202797244931083958268520241837725819355529229">
+  </nft-card> -->
+  <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+  <!-- <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script> -->
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
